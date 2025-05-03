@@ -45,3 +45,8 @@ Thumbs.db
 
 # # === Gradle Wrapper (keep the jar) ===
 # !gradle/wrapper/gradle-wrapper.jar
+
+
+.repomix
+
+repomix-output.txt
