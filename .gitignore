@@ -23,7 +23,7 @@ replay_pid*
 *.ipr
 *.iws
 out/
-.vscode/
+# .vscode/
 
 # === BlueJ (educational Java IDE) ===
 *.ctxt
