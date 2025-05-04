@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "1.9.23"
     kotlin("plugin.serialization") version "1.9.23"
     application
+    id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
 repositories {
@@ -25,4 +26,15 @@ dependencies {
 
 application {
     mainClass.set("MainKt")
+}
+
+tasks {
+    named<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar>("shadowJar") {
+        archiveFileName.set("app-all.jar")
+        mergeServiceFiles()
+    }
+
+    build {
+        dependsOn(shadowJar)
+    }
 }
