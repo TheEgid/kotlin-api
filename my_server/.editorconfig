@@ -1,0 +1,26 @@
+# Корневая секция
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# Kotlin-файлы и скрипты
+[*.{kt,kts}]
+# ktlint_standard_no-wildcard-imports = disabled
+ij_kotlin_packages_to_use_import_on_demand = java.util.*,io.ktor.**
+ktlint_import-ordering = idea
+ktlint_final-newline = true
+ktlint_max-line-length = 120
+ktlint_no-wildcard-imports = true
+ktlint_indent-style = space
+ktlint_indent-size = 4
+
+# Исключения — build-артефакты
+[**/build/**/*.kt]
+ktlint_no-wildcard-imports = disabled
+ktlint_standard_no-wildcard-imports = disabled

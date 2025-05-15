@@ -1,0 +1,9 @@
+
+{
+    "kotlin.languageServer.path": "gradlew", // через wrapper
+    "kotlin.languageServer.enabled": true,
+    "java.import.gradle.wrapper.enabled": true,
+    "java.import.gradle.enabled": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "gradle.nestedProjects": true
+}
